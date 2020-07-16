@@ -1,0 +1,53 @@
+body{
+    background-color: #ff9f43;
+}
+
+h1,h2{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    margin: 10px;
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+button{
+    display: block;
+    margin: auto;
+}
+
+.area{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.area::after{
+    content: '';
+    display: block;
+    width: 200px;
+    background: url(../img/tanah.png) bottom center no-repeat;
+    height: 100px;
+    background-size: 80%;
+    position: absolute;
+    bottom: -25px;
+}
+
+.imouto{
+    width: 100%;
+    height: 100%;
+    background: url(../img/umaru.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+}
+
+.area.muncul .imouto{
+    top: 0;
+}
